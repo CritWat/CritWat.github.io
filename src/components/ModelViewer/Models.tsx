@@ -1,3 +1,8 @@
-export const Models = () => {
-    return (<div>This will be the model viewer</div>);
+import ModelViewer from "./ModelViewer.tsx";
+
+
+export default function Models(){
+    return (<div>
+        <ModelViewer />
+    </div>);
 }
