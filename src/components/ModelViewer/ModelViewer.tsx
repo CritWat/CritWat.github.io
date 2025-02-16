@@ -8,7 +8,13 @@ export default function ModelViewer() {
         // @ts-ignore
         if (window.StlViewer) {
             // @ts-ignore
-            new window.StlViewer(document.getElementById('stl_cont'), { models: [{ id: 0, filename: '/models/prometheus_award.stl' }] });
+            new window.StlViewer(document.getElementById('stl_cont'),
+                {
+                    auto_resize: false,
+                    zoom: -5000,
+                    models: [{ id: 0, filename: '/models/prometheus_award.stl', rotationx: -90 }]
+                }
+            );
         }
         init.current = true;
         }

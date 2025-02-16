@@ -1,8 +1,9 @@
 import ModelViewer from "./ModelViewer.tsx";
+import {Paper} from "@mantine/core";
 
 
 export default function Models(){
-    return (<div>
+    return (<Paper withBorder>
         <ModelViewer />
-    </div>);
+    </Paper>);
 }
