@@ -43,7 +43,7 @@ export const Header = () => {
     const [linksOpened, { toggle: toggleLinks }] = useDisclosure(false);
 
     const links = modelLinks.map((link) => (
-        <NavLink to={link.link}>
+        <NavLink to={link.link} key={link.title}>
             <UnstyledButton className={classes.subLink} key={link.title}>
 
                 <Group wrap="nowrap" align={"center"}>
