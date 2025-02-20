@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import {useDisclosure} from "@mantine/hooks";
-import {MdUpload, MdViewInAr} from "react-icons/md";
+import {MdViewInAr} from "react-icons/md";
 import {
     Box, Burger,
     Button,
@@ -15,23 +15,10 @@ import {
 } from "@mantine/core";
 import classes from "./Header.module.css";
 import {FaChevronDown} from "react-icons/fa";
-import {IoMdTrophy} from "react-icons/io";
 
 const modelLinks = [
     {
         icon: MdViewInAr,
-        title: "Model Viewer",
-        description: "View models in 3D",
-        link: "/",
-    },
-    {
-        icon: MdUpload,
-        title: "Upload Model",
-        description: "Upload your own model",
-        link: "/",
-    },
-    {
-        icon: IoMdTrophy,
         title: "My Designs",
         description: "A collection of some of my blender projects used for 3D printing",
         link: "/models"
@@ -78,7 +65,7 @@ export const Header = () => {
                                 <a href="#" className={classes.link}>
                                     <Center inline>
                                         <Box component="span" mr={5}>
-                                            3D Models
+                                            Stuff & Things
                                         </Box>
                                         <FaChevronDown size={16} />
                                     </Center>
@@ -87,7 +74,7 @@ export const Header = () => {
 
                             <HoverCard.Dropdown style={{ overflow: 'hidden' }}>
                                 <Group justify="space-between" px="md">
-                                    <Text fw={500}>3D Models</Text>
+                                    <Text fw={500}>My Collection of Projects</Text>
                                 </Group>
 
                                 <Divider my="sm" />
