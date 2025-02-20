@@ -1,4 +1,4 @@
-import { parse_3d_file } from "../public/build/parser.min.js";
+import { parse_3d_file } from "/build/parser.min.js?url";
 
 const MSG_DATA = 0;
 const MSG_LOAD = 1;
